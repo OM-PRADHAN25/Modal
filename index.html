@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Web Dev</title>
+    <link rel="icon" href="image.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-black font-custom w-[100vw] h-[100vh]">
+    <!-- wrapper  -->
+<div>
+    <!-- circle1  -->
+    <div class="bg-[linear-gradient(-25deg,#d84869,#f46641)] top-[5%] left-[30%] fixed w-[13em] h-[13em] border-r-[50%] shadow-[0_0_50px_#d84869] animate-[circle1Animate_15s_infinite] rounded-full"></div>
+    <!-- circle2  -->
+    <div class="absolute bottom-[5%] right-[30%] w-[19em] h-[19em] rounded-full shadow-[0_0_50px_#5648d8] bg-[linear-gradient(-25deg,#5648d8,#8641f4)] animate-[circle2Animate_8s_infinite] "></div>
+    <!-- card  -->
+    <div class="absolute top-[18%] right-[37%] flex flex-col items-center border-2 border-solid border-[#ffffff30] justify-evenly bg-[#ffffff1a] backdrop-blur-[15px] rounded-[15px] text-[#ffffff] py-[20px] px-[50px] w-[398px] h-[492px]">
+    <!-- image -->
+    <div>
+    <img src="Om Pradhan.jpeg" class="border-2 border-solid border-[#ffffff30] w-[150px] h-[150px] rounded-full object-cover">
+    </div>
+        <h2 class="font-medium text-[2rem]">OM PRADHAN</i></h2>
+        <h3 class="text-lg font-bold text-center text-[#ffffff85]">Created this page</h3>
+    <!-- Buttons -->
+    <div class="flex gap-[10px]">
+        <button onclick="openModal()" class="text-[#ffffffb9] flex text-sm px-[15px] py-[8px] border-2 border-solid border-[#ffffffb9] rounded-[4px] cursor-pointer gap-[2px] font-normal hover:bg-[#ffffffb9] hover:text-black transition-all duration-[0.5s]">Share My Profile</button>
+        <button class=" text-[#ffffffb9] font-normal px-[15px] py-[8px] border-2 border-solid border-[#ffffffb9] rounded-[4px] cursor-pointer w-[145px] text-sm hover:bg-[#ffffffb9] hover:text-black transition-all duration-[0.5s]">Follow Me</button>
+    </div>
+    </div>
+    <!-- Overlay -->
+    <div id="modal" class="hidden w-[100vw] h-[100vh] bg-[#5f5f5f83] absolute">
+        <div class="absolute flex flex-col top-[32%] right-[31%] w-[572px] h-[270px] bg-[#00000088] backdrop-blur-[10px] rounded-3xl border-2 border-solid border-[#ffffff59] py-[20px] px-[25px]">
+            <div  id="btnshare" class="text-white pb-[12px] mb-[25px] border-b-[1px] border-[#ffffff88] text-[2em] font-bold text-start">
+                <h3>Share My Profile </h3>
+            </div>
+            <div class="text-white text-[1.17em] text-start font-bold">
+                <h4>Share this via</h4>
+            </div>
+            <div class="flex text-center mt-[20px] justify-between h-[60px]">
+                <a href="#" class="p-[18px] rounded-[50%] w-[65.6px] h-[65.6px] transition-all duration-[0.8] text-[blue] border-[2px] border-[blue] hover:bg-[blue] hover:text-[black]"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="p-[18px] rounded-[50%] w-[65.6px] h-[65.6px] transition-all duration-[0.5] text-[lightblue] border-[2px] border-[lightblue] hover:bg-[lightblue] hover:text-[black]" ><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="p-[18px] rounded-[50%] w-[65.6px] h-[65.6px] transition-all duration-[0.5] text-[hsl(329,94%,56%)] border-[2px] border-[hsl(329,94%,56%)] hover:bg-[hsl(329,94%,56%)] hover:text-[black]"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="p-[18px] rounded-[50%] w-[65.6px] h-[65.6px] transition-all duration-[0.5] text-[green] border-[2px] border-[green] hover:bg-[green] hover:text-[black]"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#" class="p-[18px] rounded-[50%] w-[65.6px] h-[65.6px] transition-all duration-[0.5] text-[rgb(65,154,222)] border-[2px] border-[rgb(65,154,222)] hover:bg-[rgb(65,154,222)] hover:text-[black]"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/e285b084f4.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
