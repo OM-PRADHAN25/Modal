@@ -24,15 +24,18 @@
         <h3 class="text-lg font-bold text-center text-[#ffffff85]">Created this page</h3>
     <!-- Buttons -->
     <div class="flex gap-[10px]">
-        <button onclick="openModal()" class="text-[#ffffffb9] flex text-sm px-[15px] py-[8px] border-2 border-solid border-[#ffffffb9] rounded-[4px] cursor-pointer gap-[2px] font-normal hover:bg-[#ffffffb9] hover:text-black transition-all duration-[0.5s]">Share My Profile</button>
+        <button id="button" class="text-[#ffffffb9] flex text-sm px-[15px] py-[8px] border-2 border-solid border-[#ffffffb9] rounded-[4px] cursor-pointer gap-[2px] font-normal hover:bg-[#ffffffb9] hover:text-black transition-all duration-[0.5s]">Share My Profile</button>
         <button class=" text-[#ffffffb9] font-normal px-[15px] py-[8px] border-2 border-solid border-[#ffffffb9] rounded-[4px] cursor-pointer w-[145px] text-sm hover:bg-[#ffffffb9] hover:text-black transition-all duration-[0.5s]">Follow Me</button>
     </div>
     </div>
     <!-- Overlay -->
-    <div id="modal" class="hidden w-[100vw] h-[100vh] bg-[#5f5f5f83] absolute">
+    <div id="modal" class=" w-[100vw] h-[100vh] bg-[#5f5f5f83] absolute">
         <div class="absolute flex flex-col top-[32%] right-[31%] w-[572px] h-[270px] bg-[#00000088] backdrop-blur-[10px] rounded-3xl border-2 border-solid border-[#ffffff59] py-[20px] px-[25px]">
-            <div  id="btnshare" class="text-white pb-[12px] mb-[25px] border-b-[1px] border-[#ffffff88] text-[2em] font-bold text-start">
+            <div  id="btnshare" class="flex justify-between text-white pb-[12px] mb-[25px] border-b-[1px] border-[#ffffff88] text-[2em] font-bold text-start">
                 <h3>Share My Profile </h3>
+            <div id="Close">
+                <i class="fa-solid fa-x"></i>
+            </div>
             </div>
             <div class="text-white text-[1.17em] text-start font-bold">
                 <h4>Share this via</h4>
